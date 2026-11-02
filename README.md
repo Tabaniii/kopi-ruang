@@ -1,4 +1,4 @@
-# Kopi & Ruang
+# Biki Coffee
 
 A warm editorial café landing page built with Next.js App Router, TypeScript, Tailwind CSS 4, Lucide React, and Motion. Static export supports hosting without a Node server.
 
@@ -28,9 +28,11 @@ The production site is exported to `out/`. Webpack is selected explicitly becaus
 
 ## Business content to confirm before public launch
 
-The requested brand remains **Kopi & Ruang**. The user-supplied Maps reference identifies **Biki Coffee**, a different venue. The page explicitly identifies this as a venue reference. Directions use the supplied link; the embedded map uses its coordinates. The address is based on [Grab's Biki Coffee listing](https://dineout.grab.com/id/id/restaurants/biki-coffee-setiabudi--6-C7WBJKUWGA6AWE). Verify it directly with the business before visiting or changing branding.
+The brand, colors, expressive type, contour graphics, and featured signature drinks follow the Instagram screenshot supplied by the user (@biki.coffee). Coconut Coffee (Rp 25.000), Rose Americano (Rp 25.000), and Black Coffee (Rp 20.000) reflect the prices visible in those posts, not guaranteed current prices. Other signature drinks have no confirmed price and show “Ask our team”. Extra proposed items remain labeled as samples. Photographs are illustrative placeholders.
 
-Menu names, prices, amenities, opening hours, photography, rating, and guest stories are illustrative. Reviews are labeled as illustrative, rather than represented as verified Google reviews. The live status uses the illustrative schedule in Asia/Jakarta. Update the schedule, verified review figures and quotes, real menu, and own photographs before launch. Remove the concept labels only when the corresponding information has been verified. `robots` currently prevents indexing of the concept preview.
+The opening hours transcribed from the supplied screenshot are Monday–Friday 06:00–20:00, Saturday 06:00–18:00, Sunday 05:30–18:00 (Asia/Jakarta). The live status accounts for half-hour opening times. Confirm holiday changes directly. Directions and map coordinates use the user's supplied Biki Coffee Google Maps link. The street address is based on [Grab's Biki Coffee listing](https://dineout.grab.com/id/id/restaurants/biki-coffee-setiabudi--6-C7WBJKUWGA6AWE).
+
+The separate `/menu/` route has five categories, live search across all items, accessible keyboard tabs, result counts, and an empty state. Both pages share navigation, reservation dialog, footer and mobile actions. Subtle reveal, category, image-hover, and entry animations respect reduced-motion preferences. Static export includes `/menu/index.html` for direct navigation. The source repository and deployed URL keep their existing names to preserve links. `robots` still prevents indexing while the business details are being confirmed.
 
 WhatsApp is intentionally unconfigured because no confirmed WhatsApp number was supplied. Set `cafe.whatsapp` to international digits without spaces or `+`. The form then opens a prefilled WhatsApp request; the visitor sends it themselves. Until then, it copies a request and explains that no table was booked. No visitor information is stored or transmitted by the form itself. Never put private API tokens in client code.
 
